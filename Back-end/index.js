@@ -18,12 +18,10 @@ connectDB();
 
 // CORS configuration
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: '*',
   credentials: true,
   optionsSuccessStatus: 200,
 };
-
-
 
 
 // Middleware
@@ -31,16 +29,6 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-
-
-
-
-
-
-
-
-
-
 
 // Routes
 app.use('/api/auth', authRoute);
@@ -50,19 +38,9 @@ app.use('/api/registration', registrationRoute);
 app.use('/api/query', queryRoute);
 
 
-
-
-
-
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
-
-
-
-
-
-
 
 
 // Start the server
