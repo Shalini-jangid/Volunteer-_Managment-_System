@@ -4,6 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 const connectDB = require('./DB')
 const port = process.env.PORT
+
 const cookieParser = require('cookie-parser');
 const authRoute = require('./routes/authRoutes');
 const feedbackRoute = require('./routes/feedbackRoute');
@@ -38,7 +39,7 @@ app.use('/api/registration', registrationRoute);
 app.use('/api/query', queryRoute);
 
 
-app.get('/', (req, res) => {
+app.get('/hi', (req, res) => {
   res.send('Hello World!');
 });
 
