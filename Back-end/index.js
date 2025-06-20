@@ -8,7 +8,7 @@ const port = process.env.PORT
 const cookieParser = require('cookie-parser');
 const authRoute = require('./routes/authRoutes');
 const feedbackRoute = require('./routes/feedbackRoute');
-const eventRoute = require('./routes/eventRoute');
+const eventRoute = require('./routes/eventRoute')
 const registrationRoute = require('./routes/registrationRoute');
 const queryRoute = require('./routes/queryRoutes');
 
