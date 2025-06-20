@@ -30,4 +30,5 @@ app.get('/hi', (req, res) => {
 });
 
 // ✅ For Vercel: export the app
-module.exports = app;
+const serverless = require('serverless-http');
+module.exports = serverless(app);
