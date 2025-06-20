@@ -19,7 +19,7 @@ connectDB();
 
 // CORS configuration
 const corsOptions = {
-  origin: '*',
+  origin: 'https://vm-frontend-three.vercel.app',
   credentials: true,
   optionsSuccessStatus: 200,
 };
