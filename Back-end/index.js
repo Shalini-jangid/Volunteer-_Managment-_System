@@ -39,7 +39,7 @@ app.use('/api/registration', registrationRoute);
 app.use('/api/query', queryRoute);
 
 
-app.get('/hi', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
