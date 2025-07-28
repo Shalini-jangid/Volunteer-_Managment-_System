@@ -8,7 +8,7 @@ const MyEvents = () => {
   const [error, setError] = useState('');
 
   // Replace with your actual API base URL
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://vm-backend-khaki.vercel.app';
 
   // Fetch user's event registrations
   const fetchRegistrations = async () => {
